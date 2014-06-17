@@ -22,6 +22,13 @@ The [team behind LocomotiveCMS](http://locomotivecms.com/crew "The crew behind L
 [LocomotiveCMS::LiquidExtensions](https://github.com/locomotivecms/liquid_extensions "A list of misc liquid tags and filters.")
 which this gem is based on.
 
+Filters
+-------
+
+### math
+
+### sample
+
 Installation
 ------------
 
