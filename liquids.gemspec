@@ -23,6 +23,8 @@ Gem::Specification.new do |spec|
 
   spec.required_rubygems_version = Gem::Requirement.new '>= 2.0.0'
 
+  spec.add_dependency 'locomotivecms-solid', '~> 0.2.2.1'
+
   spec.add_development_dependency 'bundler', '~> 1.6.3'
 
   spec.add_development_dependency 'rake', '~> 10.3.2'

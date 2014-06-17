@@ -1,3 +1,4 @@
-module Liquids
-  # Your code goes here...
-end
+require 'liquid'
+require 'solid'
+
+require 'liquids/filters'

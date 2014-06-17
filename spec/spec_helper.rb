@@ -1,9 +1,20 @@
 require 'bundler/setup'
 
-lib = File.expand_path '../../lib', __FILE__
+root = File.expand_path '../../', __FILE__
+
+lib = File.expand_path 'lib', root
 $:.unshift lib unless $:.include? lib
 
 require 'liquids'
+
+# Requires supporting ruby files with custom matchers and macros, etc. in `spec/support` and its subdirectories. Files
+# matching `spec/**/*_spec.rb` are run as spec files by default. This means that files in `spec/support` that end in
+# `_spec.rb` will both be required and run as specs, causing the specs to be run twice. It is recommended that you do
+# not name files matching this glob to end with `_spec.rb`. You can configure this pattern with with the `--pattern`
+# option.
+support = File.expand_path 'spec/support', root
+
+Dir["#{support}/**/*.rb"].each { |file| require file }
 
 # Conventionally, all specs live under a `spec` directory, which RSpec adds to the `$LOAD_PATH`. The generated `.rspec`
 # file contains `--require spec_helper` which will cause this file to always be loaded, without a need to explicitly
