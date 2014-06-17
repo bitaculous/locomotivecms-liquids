@@ -1,7 +1,7 @@
 [Liquids](http://bitaculous.github.io/liquids "A package of misc liquid blocks, tags and filters.")
 ===================================================================================================
 
-**A package of misc liquid tags and filters.**
+**A package of misc liquid blocks, tags and filters.**
 
 This gem includes useful [Liquid](http://liquidmarkup.org "Liquid Templating language") blocks, tags and filters which
 can be all embedded in both [Wagon](https://github.com/locomotivecms/wagon "The right tool to create and modify a LocomotiveCMS website locally.")
