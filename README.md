@@ -3,8 +3,8 @@
 
 **A package of misc liquid tags and filters.**
 
-This gem includes list of useful [Liquid](http://liquidmarkup.org "Liquid Templating language") blocks, tags and filters
-which can be all embedded in both [Wagon](https://github.com/locomotivecms/wagon "The right tool to create and modify a LocomotiveCMS website locally.")
+This gem includes useful [Liquid](http://liquidmarkup.org "Liquid Templating language") blocks, tags and filters which
+can be all embedded in both [Wagon](https://github.com/locomotivecms/wagon "The right tool to create and modify a LocomotiveCMS website locally.")
 and the [LocomotiveCMS engine](https://github.com/locomotivecms/engine "The engine of LocomotiveCMS."). Behind the scene,
 it uses [Solid](https://github.com/tigerlily/solid "Helpers for easily creating custom Liquid tags and block.") to write
 reliable and consistant liquid code.
