@@ -25,9 +25,8 @@ which this gem is based on.
 Filters
 -------
 
-### math
-
-### sample
+* mod
+* sample
 
 Installation
 ------------
