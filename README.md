@@ -1,5 +1,5 @@
-[Liquids](http://bitaculous.github.io/liquids "A package of misc liquid tags and filters.")
-===========================================================================================
+[Liquids](http://bitaculous.github.io/liquids "A package of misc liquid blocks, tags and filters.")
+===================================================================================================
 
 **A package of misc liquid tags and filters.**
 
@@ -17,5 +17,5 @@ For now, it only works best with the edge versions of Wagon and the engine (mast
 License
 -------
 
-[Liquids](http://bitaculous.github.io/liquids "A package of misc liquid tags and filters.") is released under the MIT
-License (MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/liquids/master/LICENSE "License").
+[Liquids](http://bitaculous.github.io/liquids "A package of misc liquid blocks, tags and filters.") is released under
+the MIT License (MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/liquids/master/LICENSE "License").
