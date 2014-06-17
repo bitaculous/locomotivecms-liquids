@@ -1,7 +1,8 @@
-[Liquids](http://bitaculous.github.io/liquids "A package of misc liquid blocks, tags and filters.")
-===================================================================================================
+[Liquids](http://bitaculous.github.io/liquids "A package of misc liquid blocks, tags and filters for Wagon and LocomotiveCMS engine.")
+======================================================================================================================================
 
-**A package of misc liquid blocks, tags and filters.**
+**A package of misc liquid blocks, tags and filters for [Wagon](https://github.com/locomotivecms/wagon "The right tool to create and modify a LocomotiveCMS website locally.")
+and [LocomotiveCMS engine](https://github.com/locomotivecms/engine "The engine of LocomotiveCMS.").**
 
 [![Travis CI Status](https://travis-ci.org/bitaculous/liquids.svg)](http://travis-ci.org/bitaculous/liquids)
 [![Gemnasium Status](https://gemnasium.com/bitaculous/liquids.svg)](https://gemnasium.com/bitaculous/liquids)
@@ -56,5 +57,5 @@ immediately yanked and / or a new version should be immediately released that re
 License
 -------
 
-[Liquids](http://bitaculous.github.io/liquids "A package of misc liquid blocks, tags and filters.") is released under
-the MIT License (MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/liquids/master/LICENSE "License").
+[Liquids](http://bitaculous.github.io/liquids "A package of misc liquid blocks, tags and filters for Wagon and LocomotiveCMS engine.")
+is released under the MIT License (MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/liquids/master/LICENSE "License").
