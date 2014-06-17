@@ -7,7 +7,7 @@ require 'liquids/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'liquids'
-  spec.summary       = 'A package of misc liquid tags and filters.'
+  spec.summary       = 'A package of misc liquid blocks, tags and filters for Wagon and LocomotiveCMS engine.'
   spec.author        = 'Maik Kempe'
   spec.email         = 'mkempe@bitaculous.com'
   spec.homepage      = 'http://bitaculous.github.io/liquids'
