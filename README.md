@@ -42,7 +42,7 @@ Bug Reports
 -----------
 
 Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
-and submit new problems [here](https://github.com/bitaculous/locoroco/issues "Github Issues").
+and submit new problems [here](https://github.com/bitaculous/liquids/issues "Github Issues").
 
 Versioning
 ----------
