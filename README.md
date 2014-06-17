@@ -14,6 +14,13 @@ reliable and consistant liquid code.
 
 For now, it only works best with the edge versions of Wagon and the engine (master branch).
 
+Credits
+-------
+
+The [team behind LocomotiveCMS](http://locomotivecms.com/crew "The crew behind LocomotiveCMS") for creating
+[LocomotiveCMS::LiquidExtensions](https://github.com/locomotivecms/liquid_extensions "A list of misc liquid tags and filters.")
+which this gem is based on.
+
 Installation
 ------------
 
