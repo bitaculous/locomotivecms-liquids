@@ -1,0 +1,20 @@
+# Ignore gem files
+*.gem
+
+# Ignore sublime workspace files
+*.sublime-workspace
+
+# Ignore bundler configuration
+.bundle
+
+# Ignore ruby gemset configuration
+.ruby-gemset
+
+# Ignore ruby version configuration
+.ruby-version
+
+# Ignore `Gemfile.lock`
+Gemfile.lock
+
+# Ignore `pkg` folder
+pkg

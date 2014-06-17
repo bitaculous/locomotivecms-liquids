@@ -1,0 +1,3 @@
+describe Liquids do
+  # Your specs goes here...
+end

@@ -1,0 +1,11 @@
+#!/usr/bin/env bundle
+
+source 'https://rubygems.org'
+
+group :development do
+  gem 'rake', '~> 10.3.2'
+end
+
+group :development, :test do
+  gem 'rspec', '~> 3.0.0'
+end
