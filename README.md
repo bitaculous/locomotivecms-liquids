@@ -29,19 +29,15 @@ Installation
 
 In your Wagon site, add the following line to your Gemfile:
 
-    ```
     group :misc do
       gem 'liquids', github: 'bitaculous/liquids'
     end
-    ```
 
 ### Engine
 
 In the Gemfile of your engine, add the following line:
 
-    ```
     gem 'liquids', github: 'bitaculous/liquids'
-    ```
 
 Bug reports
 -----------
