@@ -66,6 +66,7 @@ Liquids is released under the [MIT License (MIT)], see [LICENSE].
 [LocomotiveCMS engine]: https://github.com/locomotivecms/engine "The engine of LocomotiveCMS."
 [LocomotiveCMS::LiquidExtensions]: https://github.com/locomotivecms/liquid_extensions "A list of misc liquid tags and filters."
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
+[Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Solid]: https://github.com/tigerlily/solid "Helpers for easily creating custom Liquid tags and block."
 [team behind LocomotiveCMS]: http://locomotivecms.com/crew "The crew behind LocomotiveCMS"
 [Travis CI Status]: http://img.shields.io/travis/bitaculous/liquids.svg?style=flat "Travis CI Status"
