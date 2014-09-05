@@ -39,7 +39,7 @@ In the Gemfile of your engine, add the following line:
 
     gem 'liquids', github: 'bitaculous/liquids'
 
-Bug reports
+Bug Reports
 -----------
 
 Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
@@ -57,8 +57,8 @@ License
 
 Liquids is released under the [MIT License (MIT)], see [LICENSE].
 
-[Gemnasium Status]: http://img.shields.io/gemnasium/bitaculous/liquids.svg?style=flat "Gemnasium Status"
 [Gemnasium]: https://gemnasium.com/bitaculous/liquids "Liquids at Gemnasium"
+[Gemnasium Status]: http://img.shields.io/gemnasium/bitaculous/liquids.svg?style=flat "Gemnasium Status"
 [here]: https://github.com/bitaculous/liquids/issues "Github Issues"
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/liquids/master/LICENSE "License"
 [Liquid]: http://liquidmarkup.org "Liquid Templating language"
@@ -69,6 +69,6 @@ Liquids is released under the [MIT License (MIT)], see [LICENSE].
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Solid]: https://github.com/tigerlily/solid "Helpers for easily creating custom Liquid tags and block."
 [team behind LocomotiveCMS]: http://locomotivecms.com/crew "The crew behind LocomotiveCMS"
-[Travis CI Status]: http://img.shields.io/travis/bitaculous/liquids.svg?style=flat "Travis CI Status"
 [Travis CI]: https://travis-ci.org/bitaculous/liquids "Liquids at Travis CI"
+[Travis CI Status]: http://img.shields.io/travis/bitaculous/liquids.svg?style=flat "Travis CI Status"
 [Wagon]: https://github.com/locomotivecms/wagon "The right tool to create and modify a LocomotiveCMS website locally."
