@@ -5,7 +5,6 @@
       "path": "./",
       "folder_exclude_patterns": [
         ".bundle",
-        "bin",
         "pkg"
       ],
       "file_exclude_patterns": [
