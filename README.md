@@ -19,8 +19,17 @@ The [team behind LocomotiveCMS] for creating [LocomotiveCMS::LiquidExtensions] w
 Filters
 -------
 
+### Math
+
 * mod
+
+### Sample
+
 * sample
+
+### Text
+
+* handleize
 
 Installation
 ------------
