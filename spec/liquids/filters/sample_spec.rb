@@ -15,8 +15,11 @@ describe Liquids::Filters::Sample do
     sample = sample array, 2
 
     expect(sample.size).to eql 2
+
     expect(sample.first).not_to eql sample.last
+
     expect(array).to include sample.first
+
     expect(array).to include sample.last
   end
 end
