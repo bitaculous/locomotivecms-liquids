@@ -1,15 +1,15 @@
 [Liquids]
 =========
 
-**A package of misc liquid blocks, tags and filters for [Wagon] and [LocomotiveCMS engine].**
+**A package of misc Liquid blocks, tags and filters for [LocomotiveCMS] [Wagon] and [Engine].**
 
 [![Travis CI Status][Travis CI Status]][Travis CI]
 [![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
-This gem includes useful [Liquid] blocks, tags and filters which can be all embedded in both [Wagon] and the
-[LocomotiveCMS engine]. Behind the scene, it uses [Solid] to write reliable and consistant liquid code.
+This gem includes useful [Liquid] blocks, tags and filters which can be all embedded in both [Wagon] and the [Engine].
+Behind the scene, it uses [Solid] to write reliable and consistant Liquid code.
 
-For now, it only works best with the edge versions of Wagon and the engine (master branch).
+For now, it only works best with the edge versions of Wagon and the Engine (master branch).
 
 Credits
 -------
@@ -57,13 +57,14 @@ License
 
 Liquids is released under the [MIT License (MIT)], see [LICENSE].
 
+[Engine]: https://github.com/locomotivecms/engine "The engine of LocomotiveCMS."
 [Gemnasium]: https://gemnasium.com/bitaculous/liquids "Liquids at Gemnasium"
 [Gemnasium Status]: http://img.shields.io/gemnasium/bitaculous/liquids.svg?style=flat "Gemnasium Status"
 [here]: https://github.com/bitaculous/liquids/issues "Github Issues"
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/liquids/master/LICENSE "License"
 [Liquid]: http://liquidmarkup.org "Liquid Templating language"
-[Liquids]: http://bitaculous.github.io/liquids "A package of misc liquid blocks, tags and filters for Wagon and LocomotiveCMS engine."
-[LocomotiveCMS engine]: https://github.com/locomotivecms/engine "The engine of LocomotiveCMS."
+[Liquids]: http://bitaculous.github.io/liquids "A package of misc liquid blocks, tags and filters for LocomotiveCMS Wagon and Engine."
+[LocomotiveCMS]: http://locomotivecms.com "An open source CMS for Rails"
 [LocomotiveCMS::LiquidExtensions]: https://github.com/locomotivecms/liquid_extensions "A list of misc liquid tags and filters."
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
