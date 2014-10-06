@@ -1,7 +1,7 @@
 [Liquids]
 =========
 
-**A package of misc Liquid blocks, tags and filters for [LocomotiveCMS] [Wagon] and [Engine].**
+**A package of misc Liquid blocks, tags and filters for LocomotiveCMS [Wagon] and [Engine].**
 
 [![Travis CI Status][Travis CI Status]][Travis CI]
 [![Gemnasium Status][Gemnasium Status]][Gemnasium]
@@ -64,7 +64,6 @@ Liquids is released under the [MIT License (MIT)], see [LICENSE].
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/liquids/master/LICENSE "License"
 [Liquid]: http://liquidmarkup.org "Liquid Templating language"
 [Liquids]: http://bitaculous.github.io/liquids "A package of misc liquid blocks, tags and filters for LocomotiveCMS Wagon and Engine."
-[LocomotiveCMS]: http://locomotivecms.com "An open source CMS for Rails"
 [LocomotiveCMS::LiquidExtensions]: https://github.com/locomotivecms/liquid_extensions "A list of misc liquid tags and filters."
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
