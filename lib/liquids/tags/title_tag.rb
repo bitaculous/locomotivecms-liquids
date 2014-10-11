@@ -1,7 +1,7 @@
 module Liquids
   module Tags
     class TitleTag < Solid::Tag
-      # Register tag under the name of `title`
+      # Register tag with name `title`
       tag_name :title
 
       context_attribute :wagon
