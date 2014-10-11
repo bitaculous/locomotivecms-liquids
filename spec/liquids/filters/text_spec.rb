@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe Liquids::Filters::Text do
   include Liquids::Filters::Text
 

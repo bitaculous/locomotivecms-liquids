@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe Liquids::Filters::Math do
   include Liquids::Filters::Math
 
