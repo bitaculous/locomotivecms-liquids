@@ -1,6 +1,6 @@
 module Liquids
   module Tags
-    class Title < Solid::Tag
+    class TitleTag < Solid::Tag
       # Register tag under the name of `title`
       tag_name :title
 

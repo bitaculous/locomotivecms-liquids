@@ -1,1 +1,1 @@
-require 'liquids/tags/title'
+require 'liquids/tags/title_tag'
