@@ -1,29 +1,29 @@
+require 'liquids/filters/text'
+
 module Liquids
   module Tags
     class TitleTag < Solid::Tag
+      include Filters::Text
+
       # Register tag with name `title`
       tag_name :title
 
+      # Context attributes
       context_attribute :site
       context_attribute :page
       context_attribute :wagon
 
-      def display(*options)
-        name   = site['name'] || site.name
-        title  = page.seo_title || page.title
-        handle = self.handleize page.handle || 'handle'
+      def display(options = {})
+        name      = options[:name] || site[:name] || site.name
+        title     = options[:title] || page.seo_title || page.title
+        separator = options[:separator] || '|'
+        handle    = handleize page.handle || 'handle'
 
         if handle == 'index'
-          "<title>#{name} | #{title}</title>"
+          "<title>#{name} #{separator} #{title}</title>"
         else
-          "<title>#{title} | #{name}</title>"
+          "<title>#{title} #{separator} #{name}</title>"
         end
-      end
-
-      protected
-
-      def handleize(input)
-        input.to_str.gsub(' ', '-').gsub('/', '-').downcase
       end
     end
   end
