@@ -1,0 +1,1 @@
+require 'liquids/tags/title'
