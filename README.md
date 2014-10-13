@@ -21,20 +21,20 @@ Filters
 
 ### Math
 
-*mod*
+#### mod
 
 ### Sample
 
-*sample*
+#### sample
 
 ### Text
 
-*handleize*
+#### handleize
 
 Tags
 ----
 
-*title*
+#### title
 
 ```liquid
 {% title %}
