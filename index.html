@@ -29,7 +29,7 @@
       </header>
       <section>
         <p>This gem includes useful <a href="http://liquidmarkup.org" title="Liquid Templating language">Liquid</a> blocks, tags and filters which can be all embedded in both <a href="https://github.com/locomotivecms/wagon" title="The right tool to create and modify a LocomotiveCMS website locally.">Wagon</a> and the <a href="https://github.com/locomotivecms/engine" title="The engine of LocomotiveCMS.">Engine</a>.
-Behind the scene, it uses <a href="https://github.com/tigerlily/solid" title="Helpers for easily creating custom Liquid tags and block.">Solid</a> to write reliable and consistant Liquid code.</p>
+Behind the scene, it uses <a href="https://github.com/tigerlily/solid" title="Helpers for easily creating custom Liquid tags and block.">Solid</a> to write reliable and consistent Liquid code.</p>
 
 <p>For now, it only works best with the edge versions of Wagon and the Engine (master branch).</p>
 
@@ -42,21 +42,46 @@ Behind the scene, it uses <a href="https://github.com/tigerlily/solid" title="He
 <a name="filters" class="anchor" href="#filters"><span class="octicon octicon-link"></span></a>Filters</h2>
 
 <h3>
+<a name="collections" class="anchor" href="#collections"><span class="octicon octicon-link"></span></a>Collections</h3>
+
+<h4>
+<a name="sample" class="anchor" href="#sample"><span class="octicon octicon-link"></span></a>sample</h4>
+
+<pre><code>{{&lt;ARRAY&gt; | sample}}
+
+{{&lt;ARRAY&gt; | sample: &lt;NUMBER&gt;}}
+</code></pre>
+
+<h3>
 <a name="math" class="anchor" href="#math"><span class="octicon octicon-link"></span></a>Math</h3>
 
-<ul>
-<li>mod</li>
-</ul><h3>
-<a name="sample" class="anchor" href="#sample"><span class="octicon octicon-link"></span></a>Sample</h3>
+<h4>
+<a name="mod" class="anchor" href="#mod"><span class="octicon octicon-link"></span></a>mod</h4>
 
-<ul>
-<li>sample</li>
-</ul><h3>
+<pre><code>{{&lt;INTEGER&gt; | mod: &lt;MODULUS&gt;}}
+</code></pre>
+
+<h3>
 <a name="text" class="anchor" href="#text"><span class="octicon octicon-link"></span></a>Text</h3>
 
-<ul>
-<li>handleize</li>
-</ul><h2>
+<h4>
+<a name="handleize" class="anchor" href="#handleize"><span class="octicon octicon-link"></span></a>handleize</h4>
+
+<pre><code>{{&lt;STRING&gt; | handleize}}
+</code></pre>
+
+<h2>
+<a name="tags" class="anchor" href="#tags"><span class="octicon octicon-link"></span></a>Tags</h2>
+
+<h4>
+<a name="title" class="anchor" href="#title"><span class="octicon octicon-link"></span></a>title</h4>
+
+<pre><code>{% title %}
+
+{% title name: '&lt;NAME&gt;', title: '&lt;TITLE&gt;', separator: '&lt;SEPARATOR&gt;' %}
+</code></pre>
+
+<h2>
 <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <h3>
