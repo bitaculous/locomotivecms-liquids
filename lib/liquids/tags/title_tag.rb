@@ -21,7 +21,7 @@ module Liquids
         index     = options[:index] || handle == 'index'
 
         if index
-          "<title>#{foo}</title>"
+          "<title>#{name} #{separator} #{title}</title>"
         else
           "<title>#{title} #{separator} #{name}</title>"
         end
