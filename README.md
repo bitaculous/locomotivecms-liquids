@@ -23,7 +23,7 @@ Filters
 
 #### sample
 
-```liquid
+```
 {{<ARRAY> | sample}}
 
 {{<ARRAY> | sample: <NUMBER>}}
@@ -33,7 +33,7 @@ Filters
 
 #### mod
 
-```liquid
+```
 {{<INTEGER> | mod: <MODULUS>}}
 ```
 
@@ -41,7 +41,7 @@ Filters
 
 #### handleize
 
-```liquid
+```
 {{<STRING> | handleize}}
 ```
 
@@ -50,7 +50,7 @@ Tags
 
 #### title
 
-```liquid
+```
 {% title %}
 
 {% title name: '<NAME>', title: '<TITLE>', separator: '<SEPARATOR>' %}
