@@ -18,5 +18,22 @@ describe Liquids::Tags::TitleTag do
     it 'renders title tag' do
       expect(subject.render(context)).to eq("<title>#{page[:seo_title]} | #{site[:name]}</title>")
     end
+
+    context 'page has `index` as handle' do
+      let(:page) { CustomModel.new(title: 'Page Title', seo_title: 'Page SEO Title', handle: 'index') }
+
+      it 'renders title tag' do
+        expect(subject.render(context)).to eq("<title>#{site[:name]} | #{page[:seo_title]}</title>")
+      end
+    end
+
+    context 'separator is specified' do
+      let(:separator) { '-' }
+      let(:options)   { "separator: '#{separator}'" }
+
+      it 'renders title tag' do
+        expect(subject.render(context)).to eq("<title>#{page[:seo_title]} #{separator} #{site[:name]}</title>")
+      end
+    end
   end
 end
