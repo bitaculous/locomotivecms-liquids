@@ -13,7 +13,7 @@ describe Liquids::Tags::TitleTag do
   describe '#display' do
     let(:site)    { CustomModel.new(name: 'Site Name', seo_title: 'Site SEO Title') }
     let(:page)    { CustomModel.new(title: 'Page Title', seo_title: 'Page SEO Title') }
-    let(:assigns) { { 'site' => site, 'page' => page, 'wagon' => true } }
+    let(:assigns) { { 'site' => site, 'page' => page } }
 
     it 'renders title tag' do
       expect(subject.render(context)).to eq("<title>#{page[:seo_title]} | #{site[:name]}</title>")
@@ -27,7 +27,25 @@ describe Liquids::Tags::TitleTag do
       end
     end
 
-    context 'separator is specified' do
+    context '`title` is specified' do
+      let(:title)   { 'Title' }
+      let(:options) { "title: '#{title}'" }
+
+      it 'renders title tag' do
+        expect(subject.render(context)).to eq("<title>#{title} | #{site[:name]}</title>")
+      end
+    end
+
+    context '`name` is specified' do
+      let(:name)    { 'Name' }
+      let(:options) { "name: '#{name}'" }
+
+      it 'renders title tag' do
+        expect(subject.render(context)).to eq("<title>#{page[:seo_title]} | #{name}</title>")
+      end
+    end
+
+    context '`separator` is specified' do
       let(:separator) { '-' }
       let(:options)   { "separator: '#{separator}'" }
 
