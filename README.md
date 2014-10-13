@@ -31,6 +31,10 @@ Filters
 
 #### handleize
 
+```liquid
+{% '<STRING>' | handleize %}
+```
+
 Tags
 ----
 
