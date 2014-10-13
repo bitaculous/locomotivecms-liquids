@@ -33,7 +33,7 @@ Filters
 
 ```liquid
 {{<INTEGER> | mod: <MODULUS>}}
-```liquid
+```
 
 ### Text
 
