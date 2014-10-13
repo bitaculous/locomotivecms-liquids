@@ -7,7 +7,7 @@
 [![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
 This gem includes useful [Liquid] blocks, tags and filters which can be all embedded in both [Wagon] and the [Engine].
-Behind the scene, it uses [Solid] to write reliable and consistant Liquid code.
+Behind the scene, it uses [Solid] to write reliable and consistent Liquid code.
 
 For now, it only works best with the edge versions of Wagon and the Engine (master branch).
 
