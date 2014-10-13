@@ -19,20 +19,28 @@ The [team behind LocomotiveCMS] for creating [LocomotiveCMS::LiquidExtensions] w
 Filters
 -------
 
+### Collections
+
+#### sample
+
+```liquid
+{{<ARRAY> | sample}}
+```
+
 ### Math
 
 #### mod
 
-### Sample
-
-#### sample
+```liquid
+{{<INTEGER> | mod: <MODULUS>}}
+```liquid
 
 ### Text
 
 #### handleize
 
 ```liquid
-{% '<STRING>' | handleize %}
+{{<STRING> | handleize}}
 ```
 
 Tags
