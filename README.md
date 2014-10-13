@@ -21,23 +21,25 @@ Filters
 
 ### Math
 
-* mod
+#### mod
 
 ### Sample
 
-* sample
+#### sample
 
 ### Text
 
-* handleize
+#### handleize
 
 Tags
 ----
 
-* title
+#### title
 
 ```liquid
 {% title %}
+
+{% title name: '<NAME>', title: '<TITLE>', separator: '<SEPARATOR>' %}
 ```
 
 Installation
