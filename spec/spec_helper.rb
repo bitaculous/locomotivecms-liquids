@@ -16,6 +16,11 @@ support = File.expand_path 'spec/support', root
 
 Dir["#{support}/**/*.rb"].each { |file| require file }
 
+# Requires shared examples in `spec/samples` and its subdirectories.
+samples = File.expand_path 'spec/samples', root
+
+Dir["#{samples}/**/*.rb"].each { |file| require file }
+
 # Conventionally, all specs live under a `spec` directory, which RSpec adds to the `$LOAD_PATH`. The generated `.rspec`
 # file contains `--require spec_helper` which will cause this file to always be loaded, without a need to explicitly
 # require it in any files.

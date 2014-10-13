@@ -14,13 +14,14 @@ module Liquids
       context_attribute :wagon
 
       def display(options = {})
-        name      = options[:name] || site[:name] || site.name
-        title     = options[:title] || page.seo_title || page.title
+        name      = options[:name] || site[:name]
+        title     = options[:title] || page[:seo_title] || page[:title]
         separator = options[:separator] || '|'
-        handle    = handleize page.handle || 'handle'
+        handle    = handleize page[:handle] || 'handle'
+        index     = options[:index] || handle == 'index'
 
-        if handle == 'index'
-          "<title>#{name} #{separator} #{title}</title>"
+        if index
+          "<title>#{foo}</title>"
         else
           "<title>#{title} #{separator} #{name}</title>"
         end
