@@ -14,7 +14,7 @@ describe Liquids::Filters::Collections do
       expect(array).to include sample
     end
 
-    it 'return the number of random elements of an array' do
+    it 'returns the number of random elements of an array' do
       sample = sample array, 2
 
       expect(sample.size).to eql 2

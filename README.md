@@ -25,6 +25,8 @@ Filters
 
 ```liquid
 {{<ARRAY> | sample}}
+
+{{<ARRAY> | sample: <NUMBER>}}
 ```
 
 ### Math
