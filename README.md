@@ -31,6 +31,15 @@ Filters
 
 * handleize
 
+Tags
+----
+
+* title
+
+```liquid
+{% title %}
+```
+
 Installation
 ------------
 
