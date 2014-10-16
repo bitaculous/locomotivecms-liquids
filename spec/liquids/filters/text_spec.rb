@@ -9,6 +9,8 @@ describe Liquids::Filters::Text do
 
       expect(handleize('Foo')).to eql 'foo'
 
+      expect(handleize('Foo_Bar')).to eql 'foo-bar'
+
       expect(handleize('Foo Bar')).to eql 'foo-bar'
     end
   end
