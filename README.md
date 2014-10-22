@@ -43,6 +43,8 @@ Filters
 
 ```
 {{<STRING> | handleize}}
+
+{{<STRING> | handleize: <SEPARATOR>}}
 ```
 
 Tags
