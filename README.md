@@ -29,6 +29,14 @@ Filters
 {{<ARRAY> | sample: <NUMBER>}}
 ```
 
+### Helpers
+
+#### url_for
+
+```
+{{<STRING> | url_for}}
+```
+
 ### Math
 
 #### mod
