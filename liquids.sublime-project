@@ -5,7 +5,8 @@
       "path": "./",
       "folder_exclude_patterns": [
         ".bundle",
-        "pkg"
+        "pkg",
+        "tmp"
       ],
       "file_exclude_patterns": [
         ".keep"
