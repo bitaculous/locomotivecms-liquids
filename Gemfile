@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gemspec # Include gemspec dependencies
 
 group :development do
-  gem 'guard-rspec', '~> 4.3.1', require: false
+  gem 'guard-rspec', '~> 4.4.2', require: false
 end
 
 group :misc do
