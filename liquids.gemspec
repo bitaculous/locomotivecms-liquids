@@ -6,16 +6,16 @@ $:.unshift lib unless $:.include? lib
 require 'liquids/version'
 
 Gem::Specification.new 'liquids', Liquids::VERSION do |spec|
-  spec.name        = 'liquids'
-  spec.summary     = 'A package of misc Liquid blocks, tags and filters for LocomotiveCMS Wagon and Engine.'
-  spec.author      = 'Maik Kempe'
-  spec.email       = 'mkempe@bitaculous.com'
-  spec.homepage    = 'https://bitaculous.github.io/liquids/'
-  spec.license     = 'MIT'
-
-  spec.files       = `git ls-files`.split($\)
-  spec.executables = spec.files.grep(/^bin/).map { |file| File.basename file }
-  spec.test_files  = spec.files.grep(/^(features|spec|test)/)
+  spec.name             = 'liquids'
+  spec.summary          = 'A package of misc Liquid blocks, tags and filters for LocomotiveCMS Wagon and Engine.'
+  spec.author           = 'Maik Kempe'
+  spec.email            = 'mkempe@bitaculous.com'
+  spec.homepage         = 'https://bitaculous.github.io/liquids/'
+  spec.license          = 'MIT'
+  spec.files            = `git ls-files`.split($\)
+  spec.executables      = spec.files.grep(/^bin/).map { |file| File.basename file }
+  spec.test_files       = spec.files.grep(/^(features|spec|test)/)
+  spec.extra_rdoc_files = ['LICENSE', 'README.md']
 
   spec.required_ruby_version = '~> 2.1'
 
