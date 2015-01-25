@@ -1,10 +1,9 @@
 [Liquids]
 =========
 
-**A package of misc Liquid blocks, tags and filters for LocomotiveCMS [Wagon] and [Engine].**
+[![Travis CI Status][Travis CI Status]][Travis CI] [![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
-[![Travis CI Status][Travis CI Status]][Travis CI]
-[![Gemnasium Status][Gemnasium Status]][Gemnasium]
+**A package of misc Liquid blocks, tags and filters for LocomotiveCMS [Wagon] and [Engine].**
 
 This gem includes useful [Liquid] blocks, tags and filters which can be all embedded in both [Wagon] and the [Engine].
 Behind the scene, it uses [Solid] to write reliable and consistent Liquid code.
@@ -83,6 +82,23 @@ In the Gemfile of your engine, add the following line:
 
     gem 'liquids', github: 'bitaculous/liquids'
 
+Development
+-----------
+
+### Specs
+
+Use the `rspec` command to run the specs:
+
+```
+$ rspec
+```
+
+or via [Guard]:
+
+```
+$ guard -g spec
+```
+
 Bug Reports
 -----------
 
@@ -104,6 +120,7 @@ Liquids is released under the [MIT License (MIT)], see [LICENSE].
 [Engine]: https://github.com/locomotivecms/engine "The engine of LocomotiveCMS."
 [Gemnasium]: https://gemnasium.com/bitaculous/liquids "Liquids at Gemnasium"
 [Gemnasium Status]: https://img.shields.io/gemnasium/bitaculous/liquids.svg?style=flat "Gemnasium Status"
+[Guard]: http://guardgem.org "A command line tool to easily handle events on file system modifications."
 [here]: https://github.com/bitaculous/liquids/issues "Github Issues"
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/liquids/master/LICENSE "License"
 [Liquid]: http://liquidmarkup.org "Liquid Templating language"
