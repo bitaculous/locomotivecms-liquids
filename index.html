@@ -28,68 +28,64 @@
         </ul>
       </header>
       <section>
-        <p>This gem includes useful <a href="http://liquidmarkup.org" title="Liquid Templating language">Liquid</a> blocks, tags and filters which can be all embedded in both <a href="https://github.com/locomotivecms/wagon" title="The right tool to create and modify a LocomotiveCMS website locally.">Wagon</a> and the <a href="https://github.com/locomotivecms/engine" title="The engine of LocomotiveCMS.">Engine</a>.
-Behind the scene, it uses <a href="https://github.com/tigerlily/solid" title="Helpers for easily creating custom Liquid tags and block.">Solid</a> to write reliable and consistent Liquid code.</p>
-
-<p>For now, it only works best with the edge versions of Wagon and the Engine (master branch).</p>
+        <p>This Gem includes useful Liquid blocks, tags and filters which can be all embedded in both Wagon and the Engine. Behind
+the scene, it uses <a href="https://github.com/tigerlily/solid" title="Helpers for easily creating custom Liquid tags and block.">Solid</a> to write reliable and consistent Liquid code.</p>
 
 <h2>
-<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits</h2>
-
-<p>The <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS">team behind LocomotiveCMS</a> for creating <a href="https://github.com/locomotivecms/liquid_extensions" title="A list of misc liquid tags and filters.">LocomotiveCMS::LiquidExtensions</a> which this gem is based on.</p>
-
-<h2>
-<a id="filters" class="anchor" href="#filters" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Filters</h2>
+<a id="contents" class="anchor" href="#contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contents</h2>
 
 <h3>
-<a id="collections" class="anchor" href="#collections" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Collections</h3>
+<a id="filters" class="anchor" href="#filters" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Filters</h3>
 
 <h4>
-<a id="sample" class="anchor" href="#sample" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>sample</h4>
+<a id="collections" class="anchor" href="#collections" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Collections</h4>
+
+<h5>
+<a id="sample" class="anchor" href="#sample" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>sample</h5>
 
 <pre><code>{{&lt;ARRAY&gt; | sample}}
 
 {{&lt;ARRAY&gt; | sample: &lt;NUMBER&gt;}}
 </code></pre>
 
-<h3>
-<a id="helpers" class="anchor" href="#helpers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Helpers</h3>
-
 <h4>
-<a id="url_for" class="anchor" href="#url_for" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>url_for</h4>
+<a id="helpers" class="anchor" href="#helpers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Helpers</h4>
+
+<h5>
+<a id="url_for" class="anchor" href="#url_for" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>url_for</h5>
 
 <pre><code>{{&lt;STRING&gt; | url_for}}
 </code></pre>
 
-<h3>
-<a id="math" class="anchor" href="#math" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Math</h3>
-
 <h4>
-<a id="mod" class="anchor" href="#mod" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>mod</h4>
+<a id="math" class="anchor" href="#math" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Math</h4>
+
+<h5>
+<a id="mod" class="anchor" href="#mod" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>mod</h5>
 
 <pre><code>{{&lt;INTEGER&gt; | mod: &lt;MODULUS&gt;}}
 </code></pre>
 
-<h3>
-<a id="text" class="anchor" href="#text" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Text</h3>
-
 <h4>
-<a id="handleize" class="anchor" href="#handleize" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>handleize</h4>
+<a id="text" class="anchor" href="#text" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Text</h4>
+
+<h5>
+<a id="handleize" class="anchor" href="#handleize" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>handleize</h5>
 
 <pre><code>{{&lt;STRING&gt; | handleize}}
 
-{{&lt;STRING&gt; | handleize: &lt;SEPARATOR&gt;}}
+{{&lt;STRING&gt; | handleize: &lt;DIVIDER&gt;}}
 </code></pre>
 
-<h2>
-<a id="tags" class="anchor" href="#tags" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tags</h2>
+<h3>
+<a id="tags" class="anchor" href="#tags" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tags</h3>
 
 <h4>
 <a id="title" class="anchor" href="#title" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>title</h4>
 
 <pre><code>{% title %}
 
-{% title name: '&lt;NAME&gt;', title: '&lt;TITLE&gt;', separator: '&lt;SEPARATOR&gt;' %}
+{% title name: '&lt;NAME&gt;', title: '&lt;TITLE&gt;', divider: '&lt;DIVIDER&gt;' %}
 </code></pre>
 
 <h2>
@@ -98,10 +94,10 @@ Behind the scene, it uses <a href="https://github.com/tigerlily/solid" title="He
 <h3>
 <a id="wagon" class="anchor" href="#wagon" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Wagon</h3>
 
-<p>In your Wagon site, add the following line to your Gemfile:</p>
+<p>In your Wagon site, add the following lines to your Gemfile:</p>
 
 <pre><code>group :misc do
-  gem 'liquids', github: 'bitaculous/liquids'
+  gem 'locomotivecms-liquids', github: 'bitaculous/locomotivecms-liquids'
 end
 </code></pre>
 
@@ -110,35 +106,49 @@ end
 
 <p>In the Gemfile of your engine, add the following line:</p>
 
-<pre><code>gem 'liquids', github: 'bitaculous/liquids'
+<pre><code>gem 'locomotivecms-liquids', github: 'bitaculous/locomotivecms-liquids'
 </code></pre>
 
 <h2>
 <a id="development" class="anchor" href="#development" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Development</h2>
 
 <h3>
-<a id="specs" class="anchor" href="#specs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Specs</h3>
+<a id="run-specs-with-rspec" class="anchor" href="#run-specs-with-rspec" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Run specs with <a href="http://rspec.info" title="Behaviour Driven Development for Ruby">RSpec</a>
+</h3>
 
-<p>Use the <code>rspec</code> command to run the specs:</p>
-
-<pre><code>$ rspec
-</code></pre>
+<p>Run <code>rspec</code>.</p>
 
 <p>or via <a href="http://guardgem.org" title="A command line tool to easily handle events on file system modifications.">Guard</a>:</p>
 
 <pre><code>$ guard -g spec
 </code></pre>
 
+<h3>
+<a id="see-test-coverage" class="anchor" href="#see-test-coverage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>See Test Coverage</h3>
+
+<p>Run <code>COVERAGE=true rspec</code>.</p>
+
+<h3>
+<a id="run-rubocop" class="anchor" href="#run-rubocop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Run <a href="https://github.com/bbatsov/rubocop" title="A Ruby static code analyzer, based on the community Ruby style guide.">RuboCop</a>
+</h3>
+
+<p>Run <code>rubocop</code>.</p>
+
+<p>To run all specs and RuboCop altogether, run <code>rake</code>.</p>
+
 <h2>
 <a id="code-status" class="anchor" href="#code-status" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Code Status</h2>
 
-<p><a href="https://travis-ci.org/bitaculous/liquids" title="Liquids at Travis CI"><img src="https://img.shields.io/travis/bitaculous/liquids.svg?style=flat" alt="Travis CI Status" title="Travis CI Status"></a> <a href="https://gemnasium.com/bitaculous/liquids" title="Liquids at Gemnasium"><img src="https://img.shields.io/gemnasium/bitaculous/liquids.svg?style=flat" alt="Gemnasium Status" title="Gemnasium Status"></a></p>
+<p><a href="https://travis-ci.org/bitaculous/locomotivecms-liquids" title="LocomotiveCMS Liquids at Travis CI"><img src="https://img.shields.io/travis/bitaculous/locomotivecms-liquids.svg?style=flat" alt="Travis CI Status" title="Travis CI Status"></a>
+<a href="https://codeclimate.com/github/bitaculous/locomotivecms-liquids" title="LocomotiveCMS Liquids at Code Climate"><img src="https://img.shields.io/codeclimate/github/bitaculous/locomotivecms-liquids.svg?style=flat" alt="Code Climate Status" title="Code Climate Status"></a>
+<a href="https://codeclimate.com/github/bitaculous/locomotivecms-liquids" title="Test Coverage (Code Climate)"><img src="https://img.shields.io/codeclimate/coverage/github/bitaculous/locomotivecms-liquids.svg?style=flat" alt="Test Coverage Status" title="Test Coverage Status"></a>
+<a href="https://gemnasium.com/bitaculous/locomotivecms-liquids" title="LocomotiveCMS Liquids at Gemnasium"><img src="https://img.shields.io/gemnasium/bitaculous/locomotivecms-liquids.svg?style=flat" alt="Gemnasium Status" title="Gemnasium Status"></a></p>
 
 <h2>
 <a id="bug-reports" class="anchor" href="#bug-reports" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bug Reports</h2>
 
 <p>Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
-and submit new problems <a href="https://github.com/bitaculous/liquids/issues" title="Github Issues">here</a>.</p>
+and submit new problems <a href="https://github.com/bitaculous/locomotivecms-liquids/issues" title="Github Issues">here</a>.</p>
 
 <h2>
 <a id="versioning" class="anchor" href="#versioning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Versioning</h2>
@@ -148,9 +158,15 @@ Specifically, if a minor or patch version is released that breaks backward compa
 immediately yanked and / or a new version should be immediately released that restores compatibility.</p>
 
 <h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits</h2>
+
+<p><a href="https://github.com/orgs/locomotivecms/people" title="The people behind LocomotiveCMS">The people behind LocomotiveCMS</a>, especially <a href="https://github.com/did" title="Didier Lafforgue at GitHub">Didier Lafforgue</a>, for creating <a href="https://github.com/locomotivecms/liquid_extensions" title="A list of misc Liquid tags and filters.">LocomotiveCMS::LiquidExtensions</a> which
+this Gem is based on.</p>
+
+<h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
 
-<p>Liquids is released under the <a href="http://opensource.org/licenses/MIT" title="The MIT License (MIT)">MIT License (MIT)</a>, see <a href="https://raw.githubusercontent.com/bitaculous/liquids/master/LICENSE" title="License">LICENSE</a>.</p>
+<p>Liquids is released under the <a href="http://opensource.org/licenses/MIT" title="The MIT License (MIT)">MIT License (MIT)</a>, see <a href="https://raw.githubusercontent.com/bitaculous/locomotivecms-liquids/master/LICENSE" title="License">LICENSE</a>.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/bitaculous">bitaculous</a></p>
