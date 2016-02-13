@@ -118,7 +118,7 @@ immediately yanked and / or a new version should be immediately released that re
 Credits
 -------
 
-The [people behind LocomotiveCMS], especially [Didier Lafforgue], for creating [LocomotiveCMS::LiquidExtensions] which
+[The people behind LocomotiveCMS], especially [Didier Lafforgue], for creating [LocomotiveCMS::LiquidExtensions] which
 this Gem is based on.
 
 License
@@ -139,7 +139,8 @@ Liquids is released under the [MIT License (MIT)], see [LICENSE].
 [LocomotiveCMS Liquids]: https://bitaculous.github.io/locomotivecms-liquids/ "A package of Liquid blocks, tags and filters for LocomotiveCMS Wagon and Engine."
 [LocomotiveCMS::LiquidExtensions]: https://github.com/locomotivecms/liquid_extensions "A list of misc Liquid tags and filters."
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
-[people behind LocomotiveCMS]: https://github.com/orgs/locomotivecms/people "The people behind LocomotiveCMS"
+[The people behind LocomotiveCMS]: https://github.com/orgs/locomotivecms/people "The people behind LocomotiveCMS"
+[RSpec]: http://rspec.info "Behaviour Driven Development for Ruby"
 [RuboCop]: https://github.com/bbatsov/rubocop "A Ruby static code analyzer, based on the community Ruby style guide."
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Solid]: https://github.com/tigerlily/solid "Helpers for easily creating custom Liquid tags and block."
