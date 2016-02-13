@@ -2,6 +2,8 @@
 =======================
 
 [![Travis CI Status][Travis CI Status]][Travis CI]
+[![Code Climate Status][Code Climate Status]][Code Climate]
+[![Test Coverage Status][Test Coverage Status]][Test Coverage]
 [![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
 **A package of [Liquid] blocks, tags and filters for [LocomotiveCMS] [Wagon] and [Engine].**
@@ -124,6 +126,8 @@ License
 
 Liquids is released under the [MIT License (MIT)], see [LICENSE].
 
+[Code Climate]: https://codeclimate.com/github/bitaculous/locomotivecms-liquids "LocomotiveCMS Liquids at Code Climate"
+[Code Climate Status]: https://img.shields.io/codeclimate/github/bitaculous/locomotivecms-liquids.svg?style=flat "Code Climate Status"
 [Didier Lafforgue]: https://github.com/did "Didier Lafforgue at GitHub"
 [Engine]: https://github.com/locomotivecms/engine "The engine of LocomotiveCMS."
 [Gemnasium]: https://gemnasium.com/bitaculous/locomotivecms-liquids "LocomotiveCMS Liquids at Gemnasium"
@@ -139,6 +143,8 @@ Liquids is released under the [MIT License (MIT)], see [LICENSE].
 [RuboCop]: https://github.com/bbatsov/rubocop "A Ruby static code analyzer, based on the community Ruby style guide."
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Solid]: https://github.com/tigerlily/solid "Helpers for easily creating custom Liquid tags and block."
+[Test Coverage]: https://codeclimate.com/github/bitaculous/locomotivecms-liquids "Test Coverage (Code Climate)"
+[Test Coverage Status]: https://img.shields.io/codeclimate/coverage/github/bitaculous/locomotivecms-liquids.svg?style=flat "Test Coverage Status"
 [Travis CI]: https://travis-ci.org/bitaculous/locomotivecms-liquids "LocomotiveCMS Liquids at Travis CI"
 [Travis CI Status]: https://img.shields.io/travis/bitaculous/locomotivecms-liquids.svg?style=flat "Travis CI Status"
 [Wagon]: https://github.com/locomotivecms/wagon "The command line tool that let's you develop for Locomotive right on your local machine."
