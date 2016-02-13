@@ -1,26 +1,22 @@
-[Liquids]
-=========
+[LocomotiveCMS Liquids]
+=======================
 
-[![Travis CI Status][Travis CI Status]][Travis CI] [![Gemnasium Status][Gemnasium Status]][Gemnasium]
+[![Travis CI Status][Travis CI Status]][Travis CI]
+[![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
-**A package of misc Liquid blocks, tags and filters for LocomotiveCMS [Wagon] and [Engine].**
+**A package of [Liquid] blocks, tags and filters for [LocomotiveCMS] [Wagon] and [Engine].**
 
-This gem includes useful [Liquid] blocks, tags and filters which can be all embedded in both [Wagon] and the [Engine].
-Behind the scene, it uses [Solid] to write reliable and consistent Liquid code.
+This Gem includes useful Liquid blocks, tags and filters which can be all embedded in both Wagon and the Engine. Behind
+the scene, it uses [Solid] to write reliable and consistent Liquid code.
 
-For now, it only works best with the edge versions of Wagon and the Engine (master branch).
+Contents
+--------
 
-Credits
--------
+### Filters
 
-The [team behind LocomotiveCMS] for creating [LocomotiveCMS::LiquidExtensions] which this gem is based on.
+#### Collections
 
-Filters
--------
-
-### Collections
-
-#### sample
+##### sample
 
 ```
 {{<ARRAY> | sample}}
@@ -28,41 +24,40 @@ Filters
 {{<ARRAY> | sample: <NUMBER>}}
 ```
 
-### Helpers
+#### Helpers
 
-#### url_for
+##### url_for
 
 ```
 {{<STRING> | url_for}}
 ```
 
-### Math
+#### Math
 
-#### mod
+##### mod
 
 ```
 {{<INTEGER> | mod: <MODULUS>}}
 ```
 
-### Text
+#### Text
 
-#### handleize
+##### handleize
 
 ```
 {{<STRING> | handleize}}
 
-{{<STRING> | handleize: <SEPARATOR>}}
+{{<STRING> | handleize: <DIVIDER>}}
 ```
 
-Tags
-----
+### Tags
 
 #### title
 
 ```
 {% title %}
 
-{% title name: '<NAME>', title: '<TITLE>', separator: '<SEPARATOR>' %}
+{% title name: '<NAME>', title: '<TITLE>', divider: '<DIVIDER>' %}
 ```
 
 Installation
@@ -70,7 +65,7 @@ Installation
 
 ### Wagon
 
-In your Wagon site, add the following line to your Gemfile:
+In your Wagon site, add the following lines to your Gemfile:
 
     group :misc do
       gem 'liquids', github: 'bitaculous/liquids'
@@ -85,19 +80,25 @@ In the Gemfile of your engine, add the following line:
 Development
 -----------
 
-### Specs
+### Run specs with [RSpec]
 
-Use the `rspec` command to run the specs:
-
-```
-$ rspec
-```
+Run `rspec`.
 
 or via [Guard]:
 
 ```
 $ guard -g spec
 ```
+
+### See Test Coverage
+
+Run `COVERAGE=true rspec`.
+
+### Run [RuboCop]
+
+Run `rubocop`.
+
+To run all specs and RuboCop altogether, run `rake`.
 
 Bug Reports
 -----------
@@ -112,24 +113,31 @@ This library aims to adhere to [Semantic Versioning 2.0.0]. Violations of this s
 Specifically, if a minor or patch version is released that breaks backward compatibility, that version should be
 immediately yanked and / or a new version should be immediately released that restores compatibility.
 
+Credits
+-------
+
+The [people behind LocomotiveCMS], especially [Didier Lafforgue], for creating [LocomotiveCMS::LiquidExtensions] which
+this Gem is based on.
+
 License
 -------
 
 Liquids is released under the [MIT License (MIT)], see [LICENSE].
 
+[Didier Lafforgue]: https://github.com/did "Didier Lafforgue at GitHub"
 [Engine]: https://github.com/locomotivecms/engine "The engine of LocomotiveCMS."
-[Gemnasium]: https://gemnasium.com/bitaculous/liquids "Liquids at Gemnasium"
-[Gemnasium Status]: https://img.shields.io/gemnasium/bitaculous/liquids.svg?style=flat "Gemnasium Status"
+[Gemnasium]: https://gemnasium.com/bitaculous/locomotivecms-liquids "LocomotiveCMS Liquids at Gemnasium"
+[Gemnasium Status]: https://img.shields.io/gemnasium/bitaculous/locomotivecms-liquids.svg?style=flat "Gemnasium Status"
 [Guard]: http://guardgem.org "A command line tool to easily handle events on file system modifications."
-[here]: https://github.com/bitaculous/liquids/issues "Github Issues"
-[LICENSE]: https://raw.githubusercontent.com/bitaculous/liquids/master/LICENSE "License"
+[here]: https://github.com/bitaculous/locomotivecms-liquids/issues "Github Issues"
+[LICENSE]: https://raw.githubusercontent.com/bitaculous/locomotivecms-liquids/master/LICENSE "License"
 [Liquid]: http://liquidmarkup.org "Liquid Templating language"
-[Liquids]: https://bitaculous.github.io/liquids/ "A package of misc liquid blocks, tags and filters for LocomotiveCMS Wagon and Engine."
-[LocomotiveCMS::LiquidExtensions]: https://github.com/locomotivecms/liquid_extensions "A list of misc liquid tags and filters."
+[LocomotiveCMS Liquids]: https://bitaculous.github.io/locomotivecms-liquids/ "A package of Liquid blocks, tags and filters for LocomotiveCMS Wagon and Engine."
+[LocomotiveCMS::LiquidExtensions]: https://github.com/locomotivecms/liquid_extensions "A list of misc Liquid tags and filters."
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
+[people behind LocomotiveCMS]: https://github.com/orgs/locomotivecms/people "The people behind LocomotiveCMS"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Solid]: https://github.com/tigerlily/solid "Helpers for easily creating custom Liquid tags and block."
-[team behind LocomotiveCMS]: http://locomotivecms.com/crew "The crew behind LocomotiveCMS"
-[Travis CI]: https://travis-ci.org/bitaculous/liquids "Liquids at Travis CI"
-[Travis CI Status]: https://img.shields.io/travis/bitaculous/liquids.svg?style=flat "Travis CI Status"
-[Wagon]: https://github.com/locomotivecms/wagon "The right tool to create and modify a LocomotiveCMS website locally."
+[Travis CI]: https://travis-ci.org/bitaculous/locomotivecms-liquids "LocomotiveCMS Liquids at Travis CI"
+[Travis CI Status]: https://img.shields.io/travis/bitaculous/locomotivecms-liquids.svg?style=flat "Travis CI Status"
+[Wagon]: https://github.com/locomotivecms/wagon "The command line tool that let's you develop for Locomotive right on your local machine."
