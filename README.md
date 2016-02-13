@@ -6,7 +6,7 @@
 [![Test Coverage Status][Test Coverage Status]][Test Coverage]
 [![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
-**A package of [Liquid] blocks, tags and filters for [LocomotiveCMS] [Wagon] and [Engine].**
+**A package of [Liquid] blocks, tags and filters for LocomotiveCMS [Wagon] and [Engine].**
 
 This Gem includes useful Liquid blocks, tags and filters which can be all embedded in both Wagon and the Engine. Behind
 the scene, it uses [Solid] to write reliable and consistent Liquid code.
