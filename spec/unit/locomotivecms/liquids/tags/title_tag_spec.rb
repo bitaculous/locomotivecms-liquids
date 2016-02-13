@@ -25,21 +25,21 @@ RSpec.describe LocomotiveCMS::Liquids::Tags::TitleTag do
 
     context 'the title is specified' do
       let(:title)  { 'Title' }
-      let(:source) { "{% title { title: '#{title}' } %}" }
+      let(:source) { "{% title title: '#{title}' %}" }
 
       it { should eq "<title>#{title} | #{site.name}</title>" }
     end
 
     context 'the name is specified' do
       let(:name)   { 'Name' }
-      let(:source) { "{% title { name: '#{name}' } %}" }
+      let(:source) { "{% title name: '#{name}' %}" }
 
       it { should eq "<title>#{page.seo_title} | #{name}</title>" }
     end
 
     context 'the divider is specified' do
       let(:divider) { '-' }
-      let(:source)  { "{% title { divider: '#{divider}' } %}" }
+      let(:source)  { "{% title divider: '#{divider}' %}" }
 
       it { should eq "<title>#{page.seo_title} #{divider} #{site.name}</title>" }
     end
