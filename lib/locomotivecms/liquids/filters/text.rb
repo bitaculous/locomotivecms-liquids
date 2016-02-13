@@ -1,9 +1,9 @@
 module LocomotiveCMS
   module Liquids
     module Filters
-      module Text
-        def handleize(input, separator = '-')
-          input.to_str.gsub(/[ \_\-\/]/, separator).downcase
+      module Text # :nodoc:
+        def handleize(input, divider = '-')
+          input.to_str.gsub(%r{[ \_\-\/]}, divider).downcase
         end
       end
     end

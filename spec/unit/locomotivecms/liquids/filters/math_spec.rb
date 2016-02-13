@@ -1,5 +1,7 @@
+# rubocop:disable RSpec/FilePath
+
 RSpec.describe LocomotiveCMS::Liquids::Filters::Math do
-  include LocomotiveCMS::Liquids::Filters::Math
+  include described_class
 
   describe '#mod' do
     it 'returns the correct number modulus' do

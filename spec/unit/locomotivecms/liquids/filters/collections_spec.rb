@@ -1,8 +1,10 @@
+# rubocop:disable RSpec/FilePath
+
 RSpec.describe LocomotiveCMS::Liquids::Filters::Collections do
-  include LocomotiveCMS::Liquids::Filters::Collections
+  include described_class
 
   describe '#sample' do
-    let(:array) { ['Foo', 'Bar', 'Foobar'] }
+    let(:array) { %w(Foo Bar Foobar) }
 
     it 'returns a random element of an array' do
       sample = sample array

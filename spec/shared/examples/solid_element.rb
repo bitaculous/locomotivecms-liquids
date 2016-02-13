@@ -1,5 +1,3 @@
-require 'solid'
-
 RSpec.shared_examples :solid_element do
   describe '.tag_name' do
     it 'register tag with given name' do
@@ -23,11 +21,11 @@ RSpec.shared_examples :solid_element do
 
       allow(Solid::Arguments).to receive(:parse).with('ARGUMENTS')
 
-      element = described_class.new 'name', 'ARGUMENTS', ['{% endname %}']
+      described_class.new 'name', 'ARGUMENTS', ['{% endname %}']
     end
 
     it 'define a custom accessor to the rendered context' do
-      allow(element).to receive(:current_context).and_return({'current_user' => 'me'})
+      allow(element).to receive(:current_context).and_return 'current_user' => 'me'
 
       expect(element.current_user).to eq('me')
     end
@@ -57,7 +55,7 @@ RSpec.shared_examples :solid_element do
 
       element = described_class.new 'name', 'ARGUMENTS', ['{% endname %}']
 
-      expect{ element.display }.to raise_error(NotImplementedError)
+      expect { element.display }.to raise_error(NotImplementedError)
     end
   end
 end

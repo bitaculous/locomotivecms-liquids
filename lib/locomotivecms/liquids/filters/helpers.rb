@@ -1,7 +1,7 @@
 module LocomotiveCMS
   module Liquids
     module Filters
-      module Helpers
+      module Helpers # :nodoc:
         def url_for(url)
           url.chomp '/'
         end

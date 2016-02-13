@@ -17,8 +17,8 @@ end
 group :test do
   # --- Code Analysis ---
 
-  gem 'rubocop',       '~> 0.35.1', require: false
-  gem 'rubocop-rspec', '~> 1.3.1',  require: false
+  gem 'rubocop',       '~> 0.37.2', require: false
+  gem 'rubocop-rspec', github: 'nevir/rubocop-rspec', require: false
 
   # --- Code Coverage ---
 

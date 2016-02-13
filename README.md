@@ -68,14 +68,14 @@ Installation
 In your Wagon site, add the following lines to your Gemfile:
 
     group :misc do
-      gem 'liquids', github: 'bitaculous/liquids'
+      gem 'locomotivecms-liquids', github: 'bitaculous/locomotivecms-liquids'
     end
 
 ### Engine
 
 In the Gemfile of your engine, add the following line:
 
-    gem 'liquids', github: 'bitaculous/liquids'
+    gem 'locomotivecms-liquids', github: 'bitaculous/locomotivecms-liquids'
 
 Development
 -----------

@@ -1,3 +1,5 @@
+# rubocop:disable RSpec/FilePath
+
 RSpec.describe LocomotiveCMS::Liquids::Tags::TitleTag do
   # it_behaves_like :solid_element
 

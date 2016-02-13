@@ -1,7 +1,7 @@
 module LocomotiveCMS
   module Liquids
     module Filters
-      module Math
+      module Math # :nodoc:
         def mod(input, modulus)
           input.to_i % modulus.to_i
         end

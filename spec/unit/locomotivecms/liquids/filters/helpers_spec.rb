@@ -1,5 +1,7 @@
+# rubocop:disable RSpec/FilePath
+
 RSpec.describe LocomotiveCMS::Liquids::Filters::Helpers do
-  include LocomotiveCMS::Liquids::Filters::Helpers
+  include described_class
 
   describe '#url_for' do
     it 'removes the trailing slash' do

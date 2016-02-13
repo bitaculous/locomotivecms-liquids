@@ -1,6 +1,7 @@
 module LocomotiveCMS
   module Liquids
-    module Tags
+    module Tags # :nodoc:
+      # The class for the Title Tag, inherited from `Solid::Tag`.
       class TitleTag < Solid::Tag
         include Filters::Text
 
@@ -11,6 +12,9 @@ module LocomotiveCMS
         context_attribute :site
         context_attribute :page
 
+        # rubocop:disable Metrics/AbcSize
+        # rubocop:disable Metrics/CyclomaticComplexity
+        # rubocop:disable Metrics/PerceivedComplexity
         def display(options = {})
           name    = options[:name] || site.name
           title   = options[:title] || page.seo_title || page.title

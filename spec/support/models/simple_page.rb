@@ -6,7 +6,7 @@ class SimplePage
   end
 
   def render(context)
-    template = Liquid::Template.parse self.source
+    template = Liquid::Template.parse source
 
     template.render context
   end

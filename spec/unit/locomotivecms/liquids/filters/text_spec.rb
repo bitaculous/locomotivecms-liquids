@@ -1,5 +1,7 @@
+# rubocop:disable RSpec/FilePath
+
 RSpec.describe LocomotiveCMS::Liquids::Filters::Text do
-  include LocomotiveCMS::Liquids::Filters::Text
+  include described_class
 
   describe '#handleize' do
     it 'returns the correct handle' do

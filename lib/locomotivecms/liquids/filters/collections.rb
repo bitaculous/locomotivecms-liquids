@@ -1,7 +1,7 @@
 module LocomotiveCMS
   module Liquids
     module Filters
-      module Collections
+      module Collections # :nodoc:
         def sample(input, number = 1)
           if input.respond_to?(:all) # Content type collection
             number > 1 ? input.all.sample(number) : input.all.sample
