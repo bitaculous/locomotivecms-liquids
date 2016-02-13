@@ -1,7 +1,5 @@
-require 'spec_helper'
-
-describe Liquids::Filters::Collections do
-  include Liquids::Filters::Collections
+RSpec.describe LocomotiveCMS::Liquids::Filters::Collections do
+  include LocomotiveCMS::Liquids::Filters::Collections
 
   describe '#sample' do
     let(:array) { ['Foo', 'Bar', 'Foobar'] }

@@ -1,7 +1,5 @@
-require 'spec_helper'
-
-describe Liquids::Filters::Text do
-  include Liquids::Filters::Text
+RSpec.describe LocomotiveCMS::Liquids::Filters::Text do
+  include LocomotiveCMS::Liquids::Filters::Text
 
   describe '#handleize' do
     it 'returns the correct handle' do

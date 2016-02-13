@@ -1,7 +1,15 @@
-language: ruby
-rvm:
-  - 2.1.5
-  - 2.2.0
 branches:
   except:
     - gh-pages
+cache: bundler
+env:
+  - COVERAGE=true
+language: ruby
+notifications:
+  email:
+    - dev@bitaculous.com
+rvm:
+  - 2.1.8
+  - 2.2.4
+  - 2.3.0
+sudo: false

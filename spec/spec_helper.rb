@@ -1,34 +1,17 @@
-require 'bundler/setup'
-
-root = File.expand_path '../../', __FILE__
-
-lib = File.expand_path 'lib', root
-$:.unshift lib unless $:.include? lib
-
-require 'liquids'
-
-# Requires supporting ruby files with custom matchers and macros, etc. in `spec/support` and its subdirectories. Files
-# matching `spec/**/*_spec.rb` are run as spec files by default. This means that files in `spec/support` that end in
-# `_spec.rb` will both be required and run as specs, causing the specs to be run twice. It is recommended that you do
-# not name files matching this glob to end with `_spec.rb`. You can configure this pattern with with the `--pattern`
-# option.
-support = File.expand_path 'spec/support', root
-
-Dir["#{support}/**/*.rb"].each { |file| require file }
-
-# Requires shared examples in `spec/samples` and its subdirectories.
-samples = File.expand_path 'spec/samples', root
-
-Dir["#{samples}/**/*.rb"].each { |file| require file }
-
-# Conventionally, all specs live under a `spec` directory, which RSpec adds to the `$LOAD_PATH`. The generated `.rspec`
-# file contains `--require spec_helper` which will cause this file to always be loaded, without a need to explicitly
-# require it in any files.
+# Conventionally, all specs live under a `spec` directory, which RSpec adds to the `$LOAD_PATH`. The `.rspec` file
+# contains `--require locomotivecms_liquids_helper` which will cause this file to always be loaded, without a need to
+# explicitly require it in any files.
 #
 # Given that it is always loaded, you are encouraged to keep this file as light-weight as possible. Requiring
 # heavyweight dependencies from this file will add to the boot time of your test suite on EVERY test run, even for an
-# individual file that may not need all of that loaded. Instead, make a separate helper file that requires this one and
-# then use it only in the specs that actually need it.
+# individual file that may not need all of that loaded. Instead, consider making a separate helper file that requires
+# the additional dependencies and performs the additional setup, and require it from the spec files that actually need
+# it.
+#
+# The `.rspec` file also contains a few flags that are not defaults but that users commonly want.
+#
+# See <http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration> for more information.
+
 RSpec.configure do |config|
   # These two settings work together to allow you to limit a spec run to individual examples or groups you care about by
   # tagging them with `:focus` metadata. When nothing is tagged with `:focus`, all examples get run.

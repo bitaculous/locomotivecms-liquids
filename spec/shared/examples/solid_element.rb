@@ -1,6 +1,6 @@
 require 'solid'
 
-shared_examples :solid_element do
+RSpec.shared_examples :solid_element do
   describe '.tag_name' do
     it 'register tag with given name' do
       expect(Liquid::Template).to receive(:register_tag).with('dummy', described_class)

@@ -1,10 +1,9 @@
 #!/usr/bin/env rake
 
-require 'bundler/setup'
-require 'bundler/gem_tasks'
+# Load all Rake tasks in `tasks`.
+Dir.glob('tasks/*.rake').each { |task| load task }
 
-require 'rspec/core/rake_task'
+# === Configuration ===
 
-RSpec::Core::RakeTask.new :spec
-
-task default: :spec
+# Run all specs and RuboCop as default task.
+task default: [:spec, :rubocop]

@@ -1,7 +1,5 @@
-require 'spec_helper'
-
-describe Liquids::Filters::Helpers do
-  include Liquids::Filters::Helpers
+RSpec.describe LocomotiveCMS::Liquids::Filters::Helpers do
+  include LocomotiveCMS::Liquids::Filters::Helpers
 
   describe '#url_for' do
     it 'removes the trailing slash' do

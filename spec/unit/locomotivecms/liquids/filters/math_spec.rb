@@ -1,7 +1,5 @@
-require 'spec_helper'
-
-describe Liquids::Filters::Math do
-  include Liquids::Filters::Math
+RSpec.describe LocomotiveCMS::Liquids::Filters::Math do
+  include LocomotiveCMS::Liquids::Filters::Math
 
   describe '#mod' do
     it 'returns the correct number modulus' do
