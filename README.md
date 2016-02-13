@@ -136,6 +136,7 @@ Liquids is released under the [MIT License (MIT)], see [LICENSE].
 [LocomotiveCMS::LiquidExtensions]: https://github.com/locomotivecms/liquid_extensions "A list of misc Liquid tags and filters."
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
 [people behind LocomotiveCMS]: https://github.com/orgs/locomotivecms/people "The people behind LocomotiveCMS"
+[RuboCop]: https://github.com/bbatsov/rubocop "A Ruby static code analyzer, based on the community Ruby style guide."
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Solid]: https://github.com/tigerlily/solid "Helpers for easily creating custom Liquid tags and block."
 [Travis CI]: https://travis-ci.org/bitaculous/locomotivecms-liquids "LocomotiveCMS Liquids at Travis CI"
