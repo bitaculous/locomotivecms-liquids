@@ -6,19 +6,19 @@ source 'https://rubygems.org'
 # dependencies, and development dependencies will be added by default to the `:development` group.
 gemspec
 
-# == Development ===
+# === Development ===
 
 group :development do
   gem 'guard-rspec', '~> 4.6.4', require: false
 end
 
-# == Test ===
+# === Test ===
 
 group :test do
   # --- Code Analysis ---
 
   gem 'rubocop',       '~> 0.37.2', require: false
-  gem 'rubocop-rspec', github: 'nevir/rubocop-rspec', require: false
+  gem 'rubocop-rspec', '~> 1.4.0',  require: false
 
   # --- Code Coverage ---
 
@@ -27,7 +27,7 @@ group :test do
   gem 'codeclimate-test-reporter', '~> 0.4.8', require: false
 end
 
-# == Misc ===
+# === Misc ===
 
 group :misc do
   # --- Formatter ---
